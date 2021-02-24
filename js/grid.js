@@ -274,7 +274,7 @@ var Grid = (function() {
 		$items.on( 'click', 'span.og-close', function() {
 			hidePreview();
 			return false;
-		} ).children( 'a' ).on( 'click', function(e) {
+		} ).children( 'a' ).on( 'mouseover', function(e) {
 
 			var $item = $( this ).parent();
 			// check if item already opened
@@ -344,7 +344,7 @@ var Grid = (function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
 			this.$description = $( '<p></p>' );
-			this.$href = $( '<a href="#">View in github</a>' );
+			this.$href = $( '<a href="#" target="_blank">View in github</a>' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
