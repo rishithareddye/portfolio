@@ -33,18 +33,16 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-
         th,
         td {
             text-align: left;
-            padding: 19px;
+            padding: 19px !important;
         }
 
         tr:nth-child(even) {
             background-color: #E0E0E0;
         }
-    </style>
-    <style>
+
         table.education {
             width: 100%;
 
@@ -66,6 +64,7 @@
             border-left: thick solid #ff0000;
             padding-left: 20px;
         }
+
         table.skills {
             width: 75%;
         }
@@ -76,8 +75,7 @@
             vertical-align: top;
             border-bottom: 1px solid #ddd;
         }
-    </style>
-    <style>
+
         input[type=text],
         select,
         textarea {
@@ -102,6 +100,54 @@
 
         input[type=submit]:hover {
             background-color: #f2f2f2;
+        }
+
+        .content-desktop {
+            display: block;
+        }
+
+        .content-mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .content-desktop {
+                display: none;
+            }
+
+            .content-mobile {
+                display: block;
+            }
+
+        }
+
+
+
+        .hrgrow {
+            border: 0;
+            height: 3px;
+            background: #999595;
+            background-image: linear-gradient(to right, #ccc, #999595, #ccc);
+        }
+
+        .format-p {
+            letter-spacing: 3px;
+            padding: 5px;
+        }
+
+        .format-p-alt {
+            letter-spacing: 3px;
+            padding: 5px;
+            background-color: #E0E0E0;
+        }
+
+        .p-head {
+            text-shadow: 0px 0.5px, 0.5px 0px, 0.5px 0.5px;
+        }
+
+        .heading-p {
+            font-weight: 900;
         }
     </style>
 </head>
@@ -165,8 +211,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <img class="img-responsive" src="images/prof1.jpeg" border="5" width="400" style="margin: auto;"
-                            /><br /><br />
+                        <img class="img-responsive" src="images/prof1.jpeg" border="5" width="400"
+                            style="margin: auto;" /><br /><br />
                         <h2>I'M RISHITA</h2>
                         <br />
                         <h4>COMPUTER SCIENCE UNDER GRADUATE/ PROGRAMMER / WEB DEVELOPER</h4>
@@ -174,20 +220,23 @@
                         <ul class="list-inline intro-social-buttons">
                             <li>
                                 <a href="https://www.facebook.com/rishitha.eleganti.56"
-                                    class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw" target="_blank"></i> <span
-                                        class="network-name">Facebook</span></a>
+                                    class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw" target="_blank"></i>
+                                    <span class="network-name">Facebook</span></a>
                             </li>
                             <li>
-                                <a href="https://github.com/rishithareddye" class="btn btn-default btn-lg" target="_blank"><i
-                                        class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                <a href="https://github.com/rishithareddye" class="btn btn-default btn-lg"
+                                    target="_blank"><i class="fa fa-github fa-fw"></i> <span
+                                        class="network-name">Github</span></a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/in/rishitha-reddy-109977189"
-                                    class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw" target="_blank"></i> <span
-                                        class="network-name">Linkedin</span></a>
+                                    class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw" target="_blank"></i>
+                                    <span class="network-name">Linkedin</span></a>
                             </li>
                             <li>
-                                <a href="resume/rishi.pdf" class="btn btn-default btn-lg" target="_blank"><i class="fa fa-file-o fa-fw" target="_blank"></i> <span class="network-name" >Resume</span></a>
+                                <a href="resume/rishi.pdf" class="btn btn-default btn-lg" target="_blank"><i
+                                        class="fa fa-file-o fa-fw" target="_blank"></i> <span
+                                        class="network-name">Resume</span></a>
                             </li>
                         </ul>
                     </div>
@@ -215,15 +264,15 @@
         <br />
         <div class="container">
 
-            <div class="row">
+            <hr class="hrgrow" />
+            <div class="row content-desktop">
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <table align="center" style="font-size: 17px;">
                         <tr>
                             <td>Name </td>
                             <td> : </td>
-                            <td>Rishitha Elaganti</td>
+                            <td>Rishita Elaganti</td>
                         </tr>
                         <tr>
                             <td>Education</td>
@@ -245,6 +294,24 @@
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="images/prof1.jpeg" alt="" width="350">
+                </div>
+            </div>
+            <div class="content-mobile" style="justify-content: left; padding:20px;">
+                <div class="format-p-alt">
+                    <p class="p-head">NAME</p>
+                    <P>RISHITA ELAGANTI</P>
+                </div>
+                <div class="format-p">
+                    <p class="p-head">EDUCATION</p>
+                    <P>BACHELOR'S IN COMPUTER SCIENCE ENGINEERING</P>
+                </div>
+                <div class="format-p-alt">
+                    <p class="p-head">LOCATION</p>
+                    <P></P>HYDERABAD, TELANGANA, INDIA</P>
+                </div>
+                <div class="format-p">
+                    <p class="p-head">EMAIL</p>
+                    <P>reddyrishitha30@gmail.com</P>
                 </div>
             </div>
 
@@ -306,7 +373,8 @@
                                         style="font-style: italic;text-align: justify;text-justify: inter-word;">
                                         <br />Trained on <strong>Machine Learning with Python and IBM DSX</strong>
                                         during June - July 2018. And completed a a Project on <strong>Analysis of
-                                            Diabetes Data.</strong></p>
+                                            Diabetes Data.</strong>
+                                    </p>
                                 </div>
                             </td>
                         </tr>
@@ -333,7 +401,8 @@
                                     <h5>G.Narayanamma Institute of Technology and Science </h5><small>(Jawaharlal Nehru
                                         Technological University)</small>
                                     <p class="lead" style="font-style: italic;"><br />Bachelor of Technology in
-                                        <br />Computer Science and Engineering</p>
+                                        <br />Computer Science and Engineering
+                                    </p>
                                 </div>
                             </td>
                         </tr>
@@ -366,7 +435,8 @@
                         </td>
                         <td>:</td>
                         <td style="border-bottom: 1px solid #ddd;">
-                            <h5 style="font-weight: lighter;letter-spacing:2px"> <i>C, C++, Java, C#, Python, Hadoop, Android, TypeScript, JavaScript.</i></h5>
+                            <h5 style="font-weight: lighter;letter-spacing:2px"> <i>C, C++, Java, C#, Python, Hadoop,
+                                    Android, TypeScript, JavaScript.</i></h5>
                         </td>
                     </tr>
                     <tr>
@@ -375,7 +445,8 @@
                         </td>
                         <td>:</td>
                         <td style="border-bottom: 1px solid #ddd;">
-                            <h5 style="font-weight: lighter;letter-spacing:2px"> <i>HTML 5, CSS3, JavaScript, PHP, ASP.net, Express.js, Angular, Node.js.</i></h5>
+                            <h5 style="font-weight: lighter;letter-spacing:2px"> <i>HTML 5, CSS3, JavaScript, PHP,
+                                    ASP.net, Express.js, Angular, Node.js.</i></h5>
                         </td>
                     </tr>
                     <tr>
@@ -384,7 +455,8 @@
                         </td>
                         <td>:</td>
                         <td style="border-bottom: 1px solid #ddd;">
-                            <h5 style="font-weight: lighter;letter-spacing:2px"> <i>MYSQL (Maria DB), Firebase Realtime DB.</i></h5>
+                            <h5 style="font-weight: lighter;letter-spacing:2px"> <i>MYSQL (Maria DB), Firebase Realtime
+                                    DB.</i></h5>
                         </td>
                     </tr>
                     <tr>
@@ -393,7 +465,8 @@
                         </td>
                         <td>:</td>
                         <td style="border-bottom: 1px solid #ddd;">
-                            <h5 style="font-weight: lighter;letter-spacing:2px"> <i>Android Studio, NetBeans, MIT App Inventor, Visual Studio, Visual Studio Code, SQL Workbench</i></h5>
+                            <h5 style="font-weight: lighter;letter-spacing:2px"> <i>Android Studio, NetBeans, MIT App
+                                    Inventor, Visual Studio, Visual Studio Code, SQL Workbench</i></h5>
                         </td>
                     </tr>
                     <tr>
@@ -517,27 +590,32 @@
                 <table align="center">
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                          <span class="info"></span>Certification of Completion of  <strong>Git Complete: The definitive, step-by-step guide to Git</strong> on April 26, 2020 by Udemy.
+                            <span class="info"></span>Certification of Completion of <strong>Git Complete: The
+                                definitive, step-by-step guide to Git</strong> on April 26, 2020 by Udemy.
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info"></span>Certification of Completion of <strong>Angular Front To Back on August</strong> 7, 2017 by Udemy.
+                            <span class="info"></span>Certification of Completion of <strong>Angular Front To Back on
+                                August</strong> 7, 2017 by Udemy.
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info"></span>Certification of Completion of <strong> Python Programming Masterclass on August</strong> 2, 2020 by Udemy.
+                            <span class="info"></span>Certification of Completion of <strong> Python Programming
+                                Masterclass on August</strong> 2, 2020 by Udemy.
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info"></span>Certificate of Appreciation for <Strong>Volunteering in Celebrations of Vimshathi</Strong> at GNITS (2017).
+                            <span class="info"></span>Certificate of Appreciation for <Strong>Volunteering in
+                                Celebrations of Vimshathi</Strong> at GNITS (2017).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info"></span>Certificate of Appreciation for <strong>Volunteering in International Women’s Day Celebrations</strong> at GNITS (2017).
+                            <span class="info"></span>Certificate of Appreciation for <strong>Volunteering in
+                                International Women’s Day Celebrations</strong> at GNITS (2017).
                         </td>
                     </tr>
                 </table>
@@ -558,42 +636,50 @@
                 <table align="center" style="background-color:white;">
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info"></span>Presented a Paper titled <strong>Envisaging Ovarian Cancer Using Machine Learning, under IEEE,</strong> at GNITS (2018).
+                            <span class="info"></span>Presented a Paper titled <strong>Envisaging Ovarian Cancer Using
+                                Machine Learning, under IEEE,</strong> at GNITS (2018).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info"></span>Presented a Paper titled <strong>Prognosis of Diabetes Using Data Science,</strong> at Vasavi College of Engineering (2018).
+                            <span class="info"></span>Presented a Paper titled <strong>Prognosis of Diabetes Using Data
+                                Science,</strong> at Vasavi College of Engineering (2018).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info"></span>Presented a Paper titled <strong> Virtual Reality,</strong> at GNITS (2016).
+                            <span class="info"></span>Presented a Paper titled <strong> Virtual Reality,</strong> at
+                            GNITS (2016).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info"></span>Presented a Paper titled <strong>Cyber Security,</strong> at GNITS.
+                            <span class="info"></span>Presented a Paper titled <strong>Cyber Security,</strong> at
+                            GNITS.
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info-clear"></span>Attended a workshop on <strong> Machine Learning,</strong> at GNITS (2018).
+                            <span class="info-clear"></span>Attended a workshop on <strong> Machine Learning,</strong>
+                            at GNITS (2018).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info-clear"></span>Attended a workshop on <strong>Developing Smart Applications Using IOT,</strong> conducted by GNITS (2018).
+                            <span class="info-clear"></span>Attended a workshop on <strong>Developing Smart Applications
+                                Using IOT,</strong> conducted by GNITS (2018).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info-clear"></span>Attended a guest lecture on <strong>Cloud Computing,</strong> at GNITS (2017).
+                            <span class="info-clear"></span>Attended a guest lecture on <strong>Cloud
+                                Computing,</strong> at GNITS (2017).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info-clear"></span>Attended a workshop on <strong>Robotics,</strong> conducted by Path Creators, at GNITS (2015).
+                            <span class="info-clear"></span>Attended a workshop on <strong>Robotics,</strong> conducted
+                            by Path Creators, at GNITS (2015).
                         </td>
                     </tr>
                     <tr>
@@ -608,32 +694,38 @@
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info-clear"></span>Coordinator of <strong>Cybersuds,</strong> at GNITS (2016-2019).
+                            <span class="info-clear"></span>Coordinator of <strong>Cybersuds,</strong> at GNITS
+                            (2016-2019).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info-clear"></span>Member of <strong>Persona-Dramatics Club,</strong> at GNITS (2016-17).
+                            <span class="info-clear"></span>Member of <strong>Persona-Dramatics Club,</strong> at GNITS
+                            (2016-17).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info-clear"></span>Member in the <strong>Rotaract Club</strong> of GNITS (2016-2017).
+                            <span class="info-clear"></span>Member in the <strong>Rotaract Club</strong> of GNITS
+                            (2016-2017).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info-clear"></span>Participated in <strong>Guess Who</strong> conducted by Literary Club, at GNITS (2017).
+                            <span class="info-clear"></span>Participated in <strong>Guess Who</strong> conducted by
+                            Literary Club, at GNITS (2017).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info-clear"></span>Participated in <strong>Group Discussion</strong> conducted by Literary Club, at GNITS (2017).
+                            <span class="info-clear"></span>Participated in <strong>Group Discussion</strong> conducted
+                            by Literary Club, at GNITS (2017).
                         </td>
                     </tr>
                     <tr>
                         <td style="border-bottom: 1px solid #ddd;font-weight: lighter;letter-spacing:2px">
-                            <span class="info-clear"></span>Participated in <strong>Tech Fest,</strong> conducted by JNTU - Hyderabad (2016).
+                            <span class="info-clear"></span>Participated in <strong>Tech Fest,</strong> conducted by
+                            JNTU - Hyderabad (2016).
                         </td>
                     </tr>
                 </table>
@@ -662,16 +754,18 @@
         <center>
             <ul class="list-inline intro-social-buttons">
                 <li>
-                    <a href="https://www.facebook.com/rishitha.eleganti.56" class="btn btn-default btn-lg" target="_blank"><i
-                            class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    <a href="https://www.facebook.com/rishitha.eleganti.56" class="btn btn-default btn-lg"
+                        target="_blank"><i class="fa fa-facebook fa-fw"></i> <span
+                            class="network-name">Facebook</span></a>
                 </li>
                 <li>
                     <a href="https://github.com/rishithareddye" class="btn btn-default btn-lg" target="_blank"><i
                             class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/rishitha-reddy-109977189" class="btn btn-default btn-lg" target="_blank"><i
-                            class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                    <a href="https://www.linkedin.com/in/rishitha-reddy-109977189" class="btn btn-default btn-lg"
+                        target="_blank"><i class="fa fa-linkedin fa-fw"></i> <span
+                            class="network-name">Linkedin</span></a>
                 </li>
 
             </ul>
